@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SDN Pasrepan I Pasrepan</title>
+    <title>Layanan Pengaduan - SDN Pasrepan I Pasrepan</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -44,8 +44,9 @@
     <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <img src="img/Logo-sd.png" style="height: 45px; margin-right: 12px;">
-            <h2 class="m-0 text-primary">SDN Pasrepan I</h2>
+            <img src="img/Logo-pasuruan.png" alt="Logo Kab Pasuruan" style="height: 45px; margin-right: 8px;">
+            <img src="img/Logo-sd.png" alt="Logo SD" style="height: 45px; margin-right: 12px;">
+            <h2 class="m-0 text-primary" style="font-size: 1.4rem; font-weight: 700;">SDN Pasrepan I</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -53,14 +54,30 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Beranda</a>
-                <a href="about.html" class="nav-item nav-link">Profil</a>
-                <a href="courses.html" class="nav-item nav-link">Ekstrakurikuler</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Fitur</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="team.html" class="dropdown-item">Guru & Staf</a>
-                        <a href="testimonial.html" class="dropdown-item">Prestasi Siswa</a>
-                        <a href="404.html" class="dropdown-item">Galeri Foto</a>
+                        <a href="about.html" class="dropdown-item">Visi & Misi</a>
+                        <a href="profil.html" class="dropdown-item">Profil Sekolah</a>
+                        <a href="team.html" class="dropdown-item">Data Guru & Staf</a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Akademik</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="courses.html" class="dropdown-item">Intrakurikuler</a>
+                        <a href="ekstrakurikuler.html" class="dropdown-item">Ekstrakurikuler</a>
+                        <a href="galery.html" class="dropdown-item">Galeri Foto</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Layanan</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalMaklumat">Maklumat Pelayanan</a>
+                        <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalInfografis">Infografis Layanan</a>
+                        <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalAlur">Alur Pengaduan</a>
+                        <a href="pengaduan.html" class="dropdown-item">Pengaduan</a>
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Hubungi Kami</a>
@@ -99,16 +116,16 @@
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+<div class="container-fluid bg-primary py-5 mb-5 page-header">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown">Testimonial</h1>
+                    <h1 class="display-3 text-white animated slideInDown">Layanan Pengaduan</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Testimonial</li>
+                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Beranda</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Layanan</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Pengaduan</li>
                         </ol>
                     </nav>
                 </div>
@@ -118,50 +135,54 @@
     <!-- Header End -->
 
 
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <!-- Pengaduan Start -->
+<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
-            <div class="text-center">
-                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
-                <h1 class="mb-5">Our Students Say!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel position-relative">
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <div class="bg-light rounded p-4 p-sm-5 h-100 border">
+                        <h3 class="mb-4 text-primary"><i class="fa fa-file-alt me-2"></i>Formulir Pengaduan Online</h3>
+                        <p class="mb-4">Silakan isi formulir resmi di bawah ini. Pastikan data yang Anda masukkan valid agar mempermudah tim kami dalam melakukan tindak lanjut.</p>
+                        
+                        <div class="ratio ratio-1x1" style="min-height: 700px;">
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScf0Jyly7xBeXt_OpTOQgtQrV2AnrS-OghC9E6x2Cj_JZLYvQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe>
+                        </div>
                     </div>
                 </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+
+                <div class="col-lg-4">
+                    <div class="bg-light rounded p-4 border mb-4">
+                        <h4 class="mb-3 text-primary"><i class="fa fa-info-circle me-2"></i>Komitmen Layanan</h4>
+                        <p class="mb-0">SDN Pasrepan I berkomitmen memberikan pelayanan pendidikan terbaik. Setiap masukan dan laporan Anda akan kami pelajari demi kenyamanan bersama.</p>
                     </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+
+                    <div class="p-4 rounded border text-white mb-4" style="background-color: #25D366;">
+                        <h4 class="text-white mb-3"><i class="fab fa-whatsapp me-2"></i>Jalur Cepat WhatsApp</h4>
+                        <p>Ingin koordinasi atau menyampaikan pengaduan yang bersifat darurat/interaktif? Hubungi operator kami via WhatsApp Web:</p>
+                        <a href="https://wa.me/6285151937012" target="_blank" class="btn btn-light w-100 fw-bold text-success py-2">
+                            <i class="fab fa-whatsapp me-2"></i>Hubungi WhatsApp Sekolah
+                        </a>
                     </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
-                    <h5 class="mb-0">Client Name</h5>
-                    <p>Profession</p>
-                    <div class="testimonial-text bg-light text-center p-4">
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+
+                    <div class="bg-light rounded p-4 border mb-4">
+                        <h4 class="mb-3 text-primary"><i class="fa fa-clock me-2"></i>Jam Operasional</h4>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><strong>Senin - Kamis:</strong> 07.00 - 13.30 WIB</li>
+                            <li class="mb-2"><strong>Jumat:</strong> 07.00 - 11.00 WIB</li>
+                            <li class="mb-0"><strong>Sabtu:</strong> 07.00 - 12.30 WIB</li>
+                        </ul>
+                        <small class="text-muted d-block mt-3">*Laporan di luar jam kerja akan diproses pada hari kerja berikutnya.</small>
+                    </div>
+
+                    <div class="bg-light rounded p-4 border">
+                        <h4 class="mb-3 text-primary"><i class="fa fa-shield-alt me-2"></i>Jaminan Privasi</h4>
+                        <p class="mb-0 fst-italic text-muted">Sekolah menjamin kerahasiaan identitas pelapor untuk setiap laporan sensitif (seperti perundungan/bullying atau administrasi) demi keamanan bersama.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Testimonial End -->
+    <!-- Pengaduan End -->
         
 
     <!-- Footer Start -->
@@ -172,7 +193,7 @@
                 <div class="col-lg-4 col-md-6">
                     <h4 class="text-white mb-3">Informasi Kontak</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jl. Raya Pohgedang No. 05 Pasrepan Kab. Pasuruan, Jawa Timur</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+62 851 5193 7012</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>sdnpasrepansatu@gmail.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
@@ -234,6 +255,49 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
+    <!-- modal maklumat, infografis dan alur layanan -->
+<div class="modal fade" id="modalMaklumat" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Sertifikat Maklumat Pelayanan</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center p-0">
+                <img src="img/course-1.webp" class="img-fluid w-100" alt="Sertifikat Maklumat">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalInfografis" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Infografis Pelayanan Publik</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center p-0">
+                <img src="img/course-2a.webp" class="img-fluid w-100" alt="Infografis Pelayanan">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalAlur" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Alur Layanan Pengaduan</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center p-0">
+                <img src="img/AlurPengaduan.webp" class="img-fluid w-100" alt="Infografis Pelayanan">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal End -->
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

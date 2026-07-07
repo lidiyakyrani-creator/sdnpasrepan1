@@ -44,8 +44,9 @@
     <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <img src="img/Logo-sd.png" style="height: 45px; margin-right: 12px;">
-            <h2 class="m-0 text-primary">SDN Pasrepan I</h2>
+            <img src="img/Logo-pasuruan.png" alt="Logo Kab Pasuruan" style="height: 45px; margin-right: 8px;">
+            <img src="img/Logo-sd.png" alt="Logo SD" style="height: 45px; margin-right: 12px;">
+            <h2 class="m-0 text-primary" style="font-size: 1.4rem; font-weight: 700;">SDN Pasrepan I</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -53,14 +54,30 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Beranda</a>
-                <a href="about.html" class="nav-item nav-link">Profil</a>
-                <a href="courses.html" class="nav-item nav-link">Ekstrakurikuler</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Fitur</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profil</a>
                     <div class="dropdown-menu fade-down m-0">
-                        <a href="team.html" class="dropdown-item">Guru & Staf</a>
-                        <a href="testimonial.html" class="dropdown-item">Prestasi Siswa</a>
-                        <a href="404.html" class="dropdown-item">Galeri Foto</a>
+                        <a href="about.html" class="dropdown-item">Visi & Misi</a>
+                        <a href="profil.html" class="dropdown-item">Profil Sekolah</a>
+                        <a href="team.html" class="dropdown-item">Data Guru & Staf</a>
+                    </div>
+                </div>
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Akademik</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="courses.html" class="dropdown-item">Intrakurikuler</a>
+                        <a href="ekstrakurikuler.html" class="dropdown-item">Ekstrakurikuler</a>
+                        <a href="galery.html" class="dropdown-item">Galeri Foto</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Layanan</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalMaklumat">Maklumat Pelayanan</a>
+                        <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalInfografis">Infografis Layanan</a>
+                        <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalAlur">Alur Pengaduan</a>
+                        <a href="pengaduan.html" class="dropdown-item">Pengaduan</a>
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Hubungi Kami</a>
@@ -377,6 +394,20 @@
     </div>
 </div>
 
+<div class="modal fade" id="modalAlur" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Alur Layanan Pengaduan</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center p-0">
+                <img src="img/AlurPengaduan.webp" class="img-fluid w-100" alt="Infografis Pelayanan">
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="modal fade" id="modalAkreditasi" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
@@ -528,7 +559,7 @@
                 <div class="col-lg-4 col-md-6">
                     <h4 class="text-white mb-3">Informasi Kontak</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jl. Raya Pohgedang No. 05 Pasrepan Kab. Pasuruan, Jawa Timur</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+62 851 5193 7012</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>sdnpasrepansatu@gmail.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
@@ -570,7 +601,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-12 text-center mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">SDN Pasrepan I Pasrepan</a>, All Right Reserved.
+                        <a class="border-bottom" href="#">SDN Pasrepan I Pasrepan</a>, All Right Reserved.
                         <br><br>
                         <small class="opacity-50">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
