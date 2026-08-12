@@ -1,36 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
     <meta charset="utf-8">
-    <title>Layanan Pengaduan - SDN Pasrepan I Pasrepan</title>
+    <title>PASREPAN SATU-DIGITAL | SDN Pasrepan I Pasrepan</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
+    <meta name="description" content="PASREPAN SATU-DIGITAL - Pusat Layanan Terpadu SDN Pasrepan I Pasrepan">
     <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+    .digital-hero {
+        background: linear-gradient(135deg, #06a9b8 0%, #0877a6 100%);
+        position: relative;
+        overflow: hidden;
+    }
+    .digital-hero::after {
+        content: "";
+        position: absolute;
+        width: 420px;
+        height: 420px;
+        border-radius: 50%;
+        background: rgba(255,255,255,.08);
+        right: -120px;
+        top: -160px;
+    }
+    .digital-badge {
+        display: inline-block;
+        padding: 8px 16px;
+        border-radius: 30px;
+        background: rgba(255,255,255,.15);
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: .5px;
+        margin-bottom: 16px;
+    }
+    .digital-card {
+        height: 100%;
+        border: 1px solid #e7eef2;
+        border-radius: 12px;
+        transition: .25s ease;
+        background: #fff;
+    }
+    .digital-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 28px rgba(0,0,0,.08);
+    }
+    .digital-icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #e8f9fb;
+        color: #06a9b8;
+        font-size: 26px;
+    }
+    .step-number {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #06a9b8;
+        color: #fff;
+        font-weight: 800;
+    }
+    .service-link {
+        text-decoration: none;
+    }
+</style>
 </head>
-
 <body>
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -39,7 +87,6 @@
         </div>
     </div>
     <!-- Spinner End -->
-
 
     <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
@@ -115,77 +162,131 @@
     </div>
     <!-- Navbar End -->
 
+    <!-- PASREPAN SATU-DIGITAL Start -->
+<div class="digital-hero py-5">
+    <div class="container py-5">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                <span class="digital-badge"><i class="fa fa-laptop me-2"></i>Layanan Publik Digital</span>
+                <h1 class="display-4 text-white mb-3">PASREPAN SATU-DIGITAL</h1>
+                <h4 class="text-white mb-4">Pusat Layanan Terpadu SDN Pasrepan I Pasrepan</h4>
+                <p class="fs-5 text-white mb-0">
+                    Akses layanan administrasi, aspirasi dan pengaduan, serta informasi pelayanan
+                    SDN Pasrepan I Pasrepan dalam satu pintu digital yang mudah, cepat, dan transparan.
+                </p>
+            </div>
+            <div class="col-lg-4 text-center wow fadeInUp" data-wow-delay="0.3s">
+                <img src="img/Logo-sd.png" alt="Logo SDN Pasrepan I" class="img-fluid"
+                     style="max-height:220px; filter: drop-shadow(0 12px 20px rgba(0,0,0,.18));">
+            </div>
+        </div>
+    </div>
+</div>
 
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mb-5 wow fadeInUp">
+            <h6 class="section-title bg-white text-center text-primary px-3">PILIH LAYANAN</h6>
+            <h1 class="mb-3">Layanan Terpadu dalam Satu Pintu</h1>
+            <p class="mb-0 text-muted">Silakan pilih layanan yang Anda perlukan.</p>
+        </div>
 
-    <!-- Header Start -->
-<div class="container-fluid bg-primary py-5 mb-5 page-header">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown">Layanan Pengaduan</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Beranda</a></li>
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Layanan</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Pengaduan</li>
-                        </ol>
-                    </nav>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="digital-card p-4 text-center">
+                    <div class="digital-icon mb-4"><i class="fa fa-file-alt"></i></div>
+                    <h4 class="mb-3">Layanan Administrasi</h4>
+                    <p class="text-muted mb-4">
+                        Pengajuan Surat Keterangan Aktif Siswa secara daring melalui formulir resmi
+                        PASREPAN SATU-DIGITAL.
+                    </p>
+                    <a href="https://forms.gle/SDsRzoxUohMQnuRn9" target="_blank" rel="noopener"
+                       class="btn btn-primary py-2 px-4 service-link">
+                        Ajukan Surat <i class="fa fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="digital-card p-4 text-center">
+                    <div class="digital-icon mb-4"><i class="fa fa-comments"></i></div>
+                    <h4 class="mb-3">Aspirasi &amp; Pengaduan</h4>
+                    <p class="text-muted mb-4">
+                        Sampaikan aspirasi, saran, masukan, maupun pengaduan kepada SDN Pasrepan I
+                        melalui kanal yang telah disediakan.
+                    </p>
+                    <a href="pengaduan.html" class="btn btn-primary py-2 px-4 service-link">
+                        Sampaikan Pengaduan <i class="fa fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="digital-card p-4 text-center">
+                    <div class="digital-icon mb-4"><i class="fa fa-info-circle"></i></div>
+                    <h4 class="mb-3">Informasi Pelayanan</h4>
+                    <p class="text-muted mb-4">
+                        Akses maklumat pelayanan, infografis layanan, serta alur pengaduan untuk
+                        memperoleh informasi sebelum menggunakan layanan.
+                    </p>
+                    <a href="index.html#layanan-publik" class="btn btn-primary py-2 px-4 service-link">
+                        Lihat Informasi <i class="fa fa-arrow-right ms-2"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Header End -->
+</div>
 
-
-    <!-- Pengaduan Start -->
-<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-8">
-                    <div class="bg-light rounded p-4 p-sm-5 h-100 border">
-                        <h3 class="mb-4 text-primary"><i class="fa fa-file-alt me-2"></i>Formulir Pengaduan Online</h3>
-                        <p class="mb-4">Silakan isi formulir resmi di bawah ini. Pastikan data yang Anda masukkan valid agar mempermudah tim kami dalam melakukan tindak lanjut.</p>
-                        
-                        <div class="ratio ratio-1x1" style="min-height: 700px;">
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScf0Jyly7xBeXt_OpTOQgtQrV2AnrS-OghC9E6x2Cj_JZLYvQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Memuat…</iframe>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="bg-light rounded p-4 border mb-4">
-                        <h4 class="mb-3 text-primary"><i class="fa fa-info-circle me-2"></i>Komitmen Layanan</h4>
-                        <p class="mb-0">SDN Pasrepan I berkomitmen memberikan pelayanan pendidikan terbaik. Setiap masukan dan laporan Anda akan kami pelajari demi kenyamanan bersama.</p>
-                    </div>
-
-                    <div class="p-4 rounded border text-white mb-4" style="background-color: #25D366;">
-                        <h4 class="text-white mb-3"><i class="fab fa-whatsapp me-2"></i>Jalur Cepat WhatsApp</h4>
-                        <p>Ingin koordinasi atau menyampaikan pengaduan yang bersifat darurat/interaktif? Hubungi operator kami via WhatsApp Web:</p>
-                        <a href="https://wa.me/6285151937012" target="_blank" class="btn btn-light w-100 fw-bold text-success py-2">
-                            <i class="fab fa-whatsapp me-2"></i>Hubungi WhatsApp Sekolah
-                        </a>
-                    </div>
-
-                    <div class="bg-light rounded p-4 border mb-4">
-                        <h4 class="mb-3 text-primary"><i class="fa fa-clock me-2"></i>Jam Operasional</h4>
-                        <ul class="list-unstyled mb-0">
-                            <li class="mb-2"><strong>Senin - Kamis:</strong> 07.00 - 13.30 WIB</li>
-                            <li class="mb-2"><strong>Jumat:</strong> 07.00 - 11.00 WIB</li>
-                            <li class="mb-0"><strong>Sabtu:</strong> 07.00 - 12.30 WIB</li>
-                        </ul>
-                        <small class="text-muted d-block mt-3">*Laporan di luar jam kerja akan diproses pada hari kerja berikutnya.</small>
-                    </div>
-
-                    <div class="bg-light rounded p-4 border">
-                        <h4 class="mb-3 text-primary"><i class="fa fa-shield-alt me-2"></i>Jaminan Privasi</h4>
-                        <p class="mb-0 fst-italic text-muted">Sekolah menjamin kerahasiaan identitas pelapor untuk setiap laporan sensitif (seperti perundungan/bullying atau administrasi) demi keamanan bersama.</p>
-                    </div>
-                </div>
+<div class="container-xxl bg-light py-5">
+    <div class="container">
+        <div class="text-center mb-5 wow fadeInUp">
+            <h6 class="section-title bg-light text-center text-primary px-3">CARA MENGGUNAKAN</h6>
+            <h1 class="mb-3">Mudah, Cepat, dan Terarah</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-3 text-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="step-number mb-3">1</div>
+                <h5>Pilih Layanan</h5>
+                <p class="text-muted mb-0">Pilih layanan yang sesuai dengan kebutuhan Anda.</p>
+            </div>
+            <div class="col-md-3 text-center wow fadeInUp" data-wow-delay="0.2s">
+                <div class="step-number mb-3">2</div>
+                <h5>Isi Data</h5>
+                <p class="text-muted mb-0">Isi formulir dengan data yang benar dan lengkap.</p>
+            </div>
+            <div class="col-md-3 text-center wow fadeInUp" data-wow-delay="0.3s">
+                <div class="step-number mb-3">3</div>
+                <h5>Verifikasi</h5>
+                <p class="text-muted mb-0">Petugas sekolah memeriksa dan menindaklanjuti pengajuan.</p>
+            </div>
+            <div class="col-md-3 text-center wow fadeInUp" data-wow-delay="0.4s">
+                <div class="step-number mb-3">4</div>
+                <h5>Tindak Lanjut</h5>
+                <p class="text-muted mb-0">Pemohon memperoleh informasi atau hasil layanan sesuai kebutuhan.</p>
             </div>
         </div>
     </div>
-    <!-- Pengaduan End -->
-        
+</div>
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-lg-8 wow fadeInUp">
+                <h3 class="mb-2">SDN Pasrepan I Pasrepan</h3>
+                <p class="mb-1"><i class="fa fa-map-marker-alt text-primary me-2"></i>Jalan Raya Pohgedang No. 05 Pasrepan Kab. Pasuruan</p>
+                <p class="mb-0 text-muted">Pemerintah Kabupaten Pasuruan</p>
+            </div>
+            <div class="col-lg-4 text-lg-end wow fadeInUp">
+                <a href="https://forms.gle/SDsRzoxUohMQnuRn9" target="_blank" rel="noopener"
+                   class="btn btn-primary py-3 px-4">
+                    <i class="fa fa-file-alt me-2"></i>Ajukan Surat Keterangan
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- PASREPAN SATU-DIGITAL End -->
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -237,7 +338,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-12 text-center mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">SDN Pasrepan I Pasrepan</a>, All Right Reserved.
+                        <a class="border-bottom" href="#">SDN Pasrepan I Pasrepan</a>, All Right Reserved.
                         <br><br>
                         <small class="opacity-50">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
@@ -253,55 +354,9 @@
     </div>
     <!-- Footer End -->
 
-
-    <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-    <!-- modal maklumat, infografis dan alur layanan -->
-<div class="modal fade" id="modalMaklumat" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Sertifikat Maklumat Pelayanan</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body text-center p-0">
-                <img src="img/course-1.webp" class="img-fluid w-100" alt="Sertifikat Maklumat">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="modalInfografis" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Infografis Pelayanan Publik</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body text-center p-0">
-                <img src="img/course-2a.webp" class="img-fluid w-100" alt="Infografis Pelayanan">
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="modalAlur" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Alur Layanan Pengaduan</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body text-center p-0">
-                <img src="img/AlurPengaduan.webp" class="img-fluid w-100" alt="Infografis Pelayanan">
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Modal End -->
-
-    <!-- JavaScript Libraries -->
+        <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
@@ -313,4 +368,6 @@
     <script src="js/main.js"></script>
 </body>
 
+</html>
+</body>
 </html>
